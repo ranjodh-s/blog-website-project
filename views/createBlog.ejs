@@ -1,0 +1,27 @@
+<%- include('header.ejs') %>
+    <main class="container">
+        <h1>Create New Blog</h1>
+        <hr>
+        <% if(locals.blog){ %>
+            <p style="background-color: rgba(0, 128, 0, 0.448); width: fit-content;">new blog created successfuly!</p>
+            <% } %>
+
+                <form action="/create/submit" method="post" class="">
+
+
+
+                    <label for="blogTitle">Title</label>
+                    <div></div>
+                    <textarea name="blogTitle" id="blogTitle" required></textarea>
+                    <div></div>
+                    <label for="blogContent">Content</label>
+                    <div></div>
+                    <textarea name="blogContent" id="blogContent" required></textarea>
+                    <div></div>
+                    <div></div>
+                    <input type="submit" value="post" class="btn btn-success mt-3">
+                </form>
+
+    </main>
+
+    <%- include('footer.ejs') %>

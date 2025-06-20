@@ -1,0 +1,45 @@
+<%- include('header.ejs') %>
+    <main>
+        <div class="container">
+            <h2 class="text-center p-5 "
+            style="width: 300px;        
+  overflow-wrap: break-word;
+  word-wrap: break-word; 
+  white-space: normal; width: auto;">
+                <%= blogs[index]['title'] %>
+            </h2>
+            <div></div>
+            <hr>
+            <p style="font-weight: lighter;" class="text-end">
+                <%= blogs[index]['uploadDate'] %>
+            </p>
+            <div></div>
+           
+            <div class="p-4" style="width: 300px;        
+  overflow-wrap: break-word;
+  word-wrap: break-word; 
+  white-space: normal; width: auto;">
+                <div>
+                    <%- blogs[index]['content'].replace(/\n/g, '<br>') %>
+                    <% console.log(blogs[index]['content'].replace(/\n/g, '<br>') ) %>
+                </div>
+            </div>
+            <div></div>
+
+            <div>
+
+
+
+
+                <button type="submit" onclick="confirmDelete(<%= index %>)" title="Delete this blog"
+                    class="btn btn-danger">Delete</button>
+
+                <form action='/update/<%= index %>' class="d-inline-block">
+                    <button type="submit" title="Modify this blog" class="btn btn-warning">Update</button>
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+    <%- include('footer.ejs') %>

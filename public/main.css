@@ -1,0 +1,30 @@
+#blogContent {
+    height: 70vh;
+    width: 100%;
+
+}
+
+#blogTitle {
+    width: 100%;
+
+}
+
+#blogDesc {
+    width: 100%;
+    height: 30vh;
+
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+label {
+    padding: 10px;
+    font-weight: bold;
+}
+
+form {
+    align-self: end;
+}

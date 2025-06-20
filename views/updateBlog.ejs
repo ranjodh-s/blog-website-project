@@ -1,0 +1,31 @@
+<%- include("header.ejs") %>
+
+
+    <main class="container">
+        <h1>Edit Blog</h1>
+        <hr>
+        <% if(locals.blogs){ %>
+
+            <form action="/update/submit/<%= index %>" method="post" class="">
+
+
+
+                <label for="blogTitle">Title</label>
+                <div></div>
+                <textarea name="blogTitle" id="blogTitle" required><%- blogs[index].title %></textarea>
+                <div></div>
+                <label for="blogContent">Content</label>
+                <div></div>
+                <textarea name="blogContent" id="blogContent" required><%- blogs[index].content %></textarea>
+                <div></div>
+                <div></div>
+                <input type="submit" value="update" onclick="storeNewline()" class="btn btn-success mt-3">
+            </form>
+            <% }else{ %>
+                <h1>blog not found!</h1>
+                <% } %>
+    </main>
+
+
+
+    <%- include("footer.ejs") %>
