@@ -29,7 +29,7 @@ A simple yet functional **blogging platform** built using **Node.js**, **Express
 ---
 
 ## 📁 Project Structure
-
+```
 bloging-website/
 │
 ├── index.js # Main server file
@@ -43,7 +43,7 @@ bloging-website/
 │ ├── header.ejs # Shared HTML head
 │ └── footer.ejs # Shared footer
 └── node_modules/ # Installed dependencies
-
+```
 
 ---
 
