@@ -51,13 +51,13 @@ bloging-website/
 
 ### 1. Clone the repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/ranjodh-s/blog-website-project
 cd bloging-website
 ```
 
 ### 2. Install dependencies
 ```bash
-$ npm install
+npm install
 ```
 
 ### 3. Run the server
